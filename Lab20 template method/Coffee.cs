@@ -18,11 +18,11 @@
         {
             if (IsAddDish())
             {
-                Console.WriteLine("Вы добавили сахар с молоком!");
+                Console.WriteLine("Добавили сахар с молоком!");
             }
             else
             {
-                Console.WriteLine("Ничего не добавили в кофе!");
+                Console.WriteLine("Без Добавок!");
             }
         }
         protected override bool IsAddDish()
