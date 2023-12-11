@@ -2,11 +2,11 @@
 {
     internal class Coffee:DrinkBehavior
     {
-        private bool _additives;
+        private bool _isAddDish;
 
-        public Coffee(bool additives)
+        public Coffee(bool isAddDish)
         {
-            _additives = additives;
+            _isAddDish = isAddDish;
         }
 
         protected override void Brew()
@@ -16,18 +16,12 @@
 
         protected override void AddСomponents()
         {
-            if (IsAddDish())
-            {
-                Console.WriteLine("Добавили сахар с молоком!");
-            }
-            else
-            {
-                Console.WriteLine("Без Добавок!");
-            }
+            Console.WriteLine("Добавили сахар с молоком!");
+            
         }
         protected override bool IsAddDish()
         {
-            return _additives;
+            return _isAddDish;
         }
     }
 }

@@ -9,15 +9,7 @@
 
         protected override void AddСomponents()
         {
-            if (IsAddDish())
-            {
-                Console.WriteLine("Добавили лимон!");
-            }
-        }
-
-        protected override bool IsAddDish()
-        {
-            return true;
+            Console.WriteLine("Добавили лимон!");
         }
     }
 }

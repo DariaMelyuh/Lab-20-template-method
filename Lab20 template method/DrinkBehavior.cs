@@ -7,7 +7,10 @@
             BoilerWater();
             PourIntoMug();
             Brew();
-            AddСomponents();
+            if (IsAddDish())
+            {
+                AddСomponents();
+            }
         }
 
         public void BoilerWater()
@@ -22,6 +25,10 @@
 
         protected abstract void Brew();
         protected abstract void AddСomponents();
-        protected abstract bool IsAddDish();
+
+        protected virtual bool IsAddDish()
+        {
+            return true;
+        }
     }
 }
